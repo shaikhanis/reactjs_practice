@@ -1,6 +1,6 @@
 import React from "react";
 
-class Navbar extends Component {
+class Navbar extends React.Component {
   state = {};
   render() {
     return (
