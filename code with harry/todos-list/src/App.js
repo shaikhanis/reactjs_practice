@@ -1,24 +1,37 @@
-import logo from './logo.svg';
 import './App.css';
+import Header from './Components/Header';
+import {Footer} from './Components/Footer';
+import {Todos} from './Components/Todos';
 
 function App() {
+
+const onDelete =(todo) =>{
+  console.log("detet" , todo)
+}
+
+  let todos = [
+    {
+    sno: 1,
+    title : 'Go To The Market',
+    desc: "You Need To go to market to get this job done"
+    },
+    {
+      sno: 2,
+      title : 'Go To The mall',
+      desc: "You Need To go to market to get this job done"
+      },
+      {
+        sno: 3,
+        title : 'Go To The Friends Home',
+        desc: "You Need To go to market to get this job done"
+        }
+      ]
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <Header title='My Todos List'/>
+    <Footer/>
+    <Todos todos={todos} onDelete ={onDelete}/>
+    </>
   );
 }
 
