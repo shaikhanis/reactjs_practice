@@ -2,8 +2,10 @@ import React from 'react'
 
 export const Footer = () => {
   return (
-    <div>
-      
-    </div>
+    <footer className="bg-dark text-light py-3">
+      <p className="text-center">
+      Copyright &copy; My Todolist.com
+      </p>
+    </footer>
   )
 }
