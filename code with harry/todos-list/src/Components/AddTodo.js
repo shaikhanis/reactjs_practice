@@ -8,10 +8,12 @@ const AddTodo = (props) => {
         e.preventDefault();
         if(!title || !desc){
             alert("Title or Description can not be empty")
-        }
-
+            
+        }else{
           props.addTodo(title,desc);
-
+          settitle('');
+          setDesc('');
+        }
      }
     return (
         <form className="container my-3" onSubmit={submit}>
