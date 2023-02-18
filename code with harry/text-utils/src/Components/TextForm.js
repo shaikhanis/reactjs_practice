@@ -15,6 +15,12 @@ const handeleLow= () =>{
   let newText = text.toLocaleLowerCase();
   setText(newText);
 }
+
+const crearText = () => {
+  let newText = ' ';
+  setText(newText);
+}
+
   
 const [text, setText] = useState("");
 
@@ -24,8 +30,9 @@ const [text, setText] = useState("");
     <h1>{props.text}</h1>
     <div className='mb-3'>
       <textarea className='form-control' name="text" id="myBox" rows="8" value={text} onChange = {handleOnChange}></textarea>
-      <button className="btn btn-info my-3 mx-2" onClick={handelUpCase}>Conver To Upper case</button>
-      <button className="btn btn-info mx-3" onClick={handeleLow}>Conver To Lower case</button>
+      <button className="btn btn-info btn-sm my-3 mx-2" onClick={handelUpCase}>Conver To Upper case</button>
+      <button className="btn btn-info btn-sm  mx-2" onClick={handeleLow}>Conver To Lower case</button>
+      <button className="btn btn-info btn-sm  mx-2" onClick={crearText}>Creare Text</button>
 
     </div>
   </div>
@@ -41,3 +48,4 @@ const [text, setText] = useState("");
 }
 
 export default TextForm
+
