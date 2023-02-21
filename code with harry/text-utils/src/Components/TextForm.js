@@ -26,13 +26,12 @@ const crearText = () => {
 }
 
 const copyHandel = ()=>{
-let copyText = document.getElementById('myBox');
-copyText.select()
-copyText.selectInRange(0, 999999)
-navigator.clipboard.writeText(copyText.value);
+navigator.clipboard.writeText(text);
 props.showAlert(': Text Has Been Copied' , 'success')
 
 }
+
+
 
 const removeExtraSpace = () => {
   let remove = text.split(/[ ]+/);
@@ -58,7 +57,7 @@ const [text, setText] = useState("");
   </div>
   <div className="container my-3 mx-2" style={{color: props.mode==='dark'?'white':'#042743'}}>
     <h1>Your Text Summary</h1>
-    <p> Number of World is [{text.split(" ").length-1}] and Number of Charecter is [{text.length}]</p>
+    <p> Number of World is [{text.split(/\s+/).filter((element)=>{return element.length!==0}).length}] and Number of Charecter is [{text.length}]</p>
     <p>{0.087 * text.split(" ").length} Minit Read</p>
     <h2>Preveiw</h2>
     <p>{text.length>0?text:"Enter Your Text in Above to Preview Here"}</p>

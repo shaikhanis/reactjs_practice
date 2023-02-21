@@ -22,7 +22,19 @@ function App() {
     }, 1500);
   };
 
-  const toggleMode = () => {
+  const removeBodyCls =() =>{
+    document.body.classList.remove('bg-light')
+    document.body.classList.remove('bg-dark')
+    document.body.classList.remove('bg-primery')
+    document.body.classList.remove('bg-danger')
+    document.body.classList.remove('bg-success')
+    document.body.classList.remove('bg-warning')
+
+  }
+
+  const toggleMode = (cls) => {
+    removeBodyCls();
+    document.body.classList.add('bg-'+cls)
     if (mode === "light") {
       setMode("dark");
       document.body.style.backgroundColor = "#042743";

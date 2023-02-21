@@ -7,9 +7,11 @@ function Alert(props) {
 
     }
   return (
-    props.alert && <div className={`alert alert-warning alert- ${props.alert.type}`} role="alert">
+    <div  style={{height: '50px'}}>
+    {props.alert && <div className={`alert alert-warning alert- ${props.alert.type}`} role="alert">
         <strong>{capitlization(props.alert.type)}</strong>{props.alert.smg}
-      </div>
+      </div>}
+    </div>
   )
 }
 
