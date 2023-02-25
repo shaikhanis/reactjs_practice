@@ -2,14 +2,10 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 
 export default class Navbar extends Component {
-  static propTypes = {
-    prop: PropTypes
-  }
-
   render() {
     return (
       <div>
-        <nav className="navbar navbar-expand-lg bg-body-tertiary navbar-dark bg-info">
+        <nav className="navbar navbar-expand-lg bg-body-tertiary navbar-dark bg-dark">
         <div className="container-fluid">
           <a className="navbar-brand" to="/">NewsMonky</a>
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
