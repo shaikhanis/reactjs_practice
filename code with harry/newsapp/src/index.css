@@ -5,9 +5,39 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
+  background: linear-gradient(90deg, rgb(238, 231, 146) 50%, rgb(94, 92, 165)100%);}
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.cards{
+  border-radius: 25px;
+  border: 3px solid rgba(167, 82, 21, 0.512);
+  font-size: large;
+}
+
+.card-img{
+  border-radius: 20px;
+}
+
+.title{
+
+  margin-left: 3%;
+  color: rgb(255, 255, 255);
+  margin-top: 15%;
+}
+
+.heading{
+  color: rgb(255, 255, 255);
+  margin-left: 8%;
+}
+.button{
+  color: rgb(255, 0, 242);
+  font-weight: 800;
+  border: 3px solid rgb(206, 36, 218);
+  border-radius: 25%;
+  padding: 1.5%;
+  background-color: rgb(77, 41, 167);
 }
