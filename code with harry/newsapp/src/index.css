@@ -5,33 +5,37 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: linear-gradient(90deg, rgb(238, 231, 146) 50%, rgb(94, 92, 165)100%);}
+  background: linear-gradient(90deg, rgb(238, 231, 146) 50%, rgb(94, 92, 165)100%);
+}
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
 
-.cards{
-  border-radius: 25px;
-  border: 3px solid rgba(167, 82, 21, 0.512);
-  font-size: large;
+.card{
+  border: 2px solid rgba(167, 82, 21, 0.512);
+  font-size:medium;
+  color: rgb(255, 255, 255);
 }
 
-.card-img{
-  border-radius: 20px;
-}
+/* .card-img{
+  border-radius: 30px;
+} */
 
 .title{
-  margin-left: 3%;
+  margin-left: 2%;
   color: rgb(255, 255, 255);
-  margin-top: 14%;
+  margin-top: 5%;
+  font-size:small;
+
 }
 
 .heading{
   color: rgb(255, 255, 255);
-  margin-left: 8%;
+  margin-left: 10%;
 }
+
 .button{
   color: rgb(54, 52, 54);
   font-weight: 700;
