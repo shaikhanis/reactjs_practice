@@ -2,11 +2,11 @@ import "./App.css";
 import Amish from "./component/Amish";
 import NavBar from "./component/NavBar";
 import PassingObject from "./component/PassingObject";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Input from "./component/Input";
 import ImageSlideShow from "./component/ImageSlideShow";
 import NothingHere from "./component/NothingHere";
 import About from "./component/About";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
